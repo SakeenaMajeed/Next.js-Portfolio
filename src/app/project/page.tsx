@@ -105,6 +105,7 @@ const projects = [
     description: "An interactive text-based adventure game where users make choices that affect the story outcome.",
     image: "/ture.jpg", 
     link: "https://github.com/SakeenaMajeed/Adventure_Game.git", 
+  },
   {
     title: "Sign-In Page",
     description: "A modern and user-friendly sign-in page template, focusing on simplicity and usability.",

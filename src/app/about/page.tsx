@@ -39,8 +39,7 @@ const About = () => {
         </div>
         <h1 className="text-4xl md:text-5xl font-bold mb-4">About Me</h1>
         <p className="text-lg md:text-xl mb-6">
-        Peace be upon you! I am Sakeena, and I am 16 years old. I started my first coding journey at 'GIAIC,' where I learned TypeScript. Then, through self-study, I also learned HTML and CSS. Thankfully, I have great confidence in myself and can create very good websites. My passion is frontend development and design, and I strive to learn new skills every day.
-      </p>
+     {"Peace be upon you! I am Sakeena, and I am 16 years old. I started my first coding journey at 'GIAIC,' where I learned TypeScript. Then, through self-study, I also learned HTML and CSS. Thankfully, I have great confidence in myself and can create very good websites. My passion is frontend development and design, and I strive to learn new skills every day." }  </p>
        
 
         {/* Social Icons */}
