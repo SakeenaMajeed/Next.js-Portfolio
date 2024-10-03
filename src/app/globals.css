@@ -2,26 +2,102 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0f172a; /* Dark background color */
+  z-index: 0;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%; /* Circle shape */
+  animation: bubbleAnimation 6s infinite ease-in-out, fadeAnimation 6s infinite ease-in-out;
+  opacity: 0.6; /* Slight transparency */
+}
+
+/* White Bubbles */
+.bubble1 {
+  background: rgba(255, 255, 255, 0.6); /* White color */
+  width: 30px; height: 30px; 
+  top: 30%; left: 10%; 
+  animation-delay: 0s; 
+}
+
+.bubble2 {
+  background: rgba(255, 255, 255, 0.6); /* White color */
+  width: 25px; height: 25px; 
+  top: 50%; left: 20%; 
+  animation-delay: 1s; 
+}
+
+.bubble3 {
+  background: rgba(255, 255, 255, 0.6); /* White color */
+  width: 20px; height: 20px; 
+  top: 60%; left: 80%; 
+  animation-delay: 2s; 
+}
+
+/* Pink Bubbles */
+.bubble4 {
+  background: rgba(255, 105, 180, 0.6); /* Pink color */
+  width: 50px; height: 50px; 
+  top: 20%; left: 40%; 
+  animation-delay: 3s; 
+}
+
+.bubble5 {
+  background: rgba(255, 105, 180, 0.6); /* Pink color */
+  width: 40px; height: 40px; 
+  top: 70%; left: 30%; 
+  animation-delay: 4s; 
+}
+
+.bubble6 {
+  background: rgba(255, 105, 180, 0.6); /* Pink color */
+  width: 35px; height: 35px; 
+  top: 10%; left: 70%; 
+  animation-delay: 5s; 
+}
+
+.bubble7 {
+  background: rgba(255, 255, 255, 0.6); /* White color */
+  width: 45px; height: 45px; 
+  top: 80%; left: 60%; 
+  animation-delay: 6s; 
+}
+
+.bubble8 {
+  background: rgba(255, 105, 180, 0.6); /* Pink color */
+  width: 55px; height: 55px; 
+  top: 40%; left: 10%; 
+  animation-delay: 7s; 
+}
+
+@keyframes bubbleAnimation {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-50px) scale(1.2);
+  }
+  100% {
+    transform: translateY(0) scale(1);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@keyframes fadeAnimation {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1; 
   }
 }
