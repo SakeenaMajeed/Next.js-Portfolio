@@ -82,6 +82,8 @@ const Skill = () => {
         }
 
         @keyframes rise {
+
+        
           0% {
             transform: translateY(0);
           }
