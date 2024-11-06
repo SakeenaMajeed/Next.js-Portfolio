@@ -18,7 +18,6 @@ const Hero: React.FC = () => {
           <Image
             src="/profile-pic (3).png"
             alt="Sakeena"
-            // className=" w-4/5 md:w-3/4 h-auto rounded-lg shadow-lg"
             width={350}
             height={350}
           />
@@ -27,7 +26,7 @@ const Hero: React.FC = () => {
 
       <div className="flex-1 flex flex-col items-start justify-center p-10 z-20">
         <motion.h1
-          className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-wide animate-color"npm run debn
+          className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-wide animate-color"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
